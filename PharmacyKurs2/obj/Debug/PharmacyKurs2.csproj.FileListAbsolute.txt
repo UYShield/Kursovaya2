@@ -1,0 +1,99 @@
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2.csproj.AssemblyReference.cache
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2.csproj.SuggestedBindingRedirects.cache
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2.csproj.ResolveComReference.cache
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\AddWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\GoodsWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\MainWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\RedactWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\ReportWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\App.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2_Content.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2_MarkupCompile.cache
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2_MarkupCompile.lref
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\bin\Debug\PharmacyKurs2.exe.config
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\bin\Debug\PharmacyKurs2.exe
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\bin\Debug\PharmacyKurs2.pdb
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\bin\Debug\EntityFramework.dll
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\bin\Debug\EntityFramework.xml
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\AddWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\GoodsWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\MainWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\RedactWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\ReportWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2.g.resources
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs_2.Properties.Resources.resources
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2.csproj.GenerateResource.cache
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2.csproj.CoreCompileInputs.cache
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2.csproj.CopyComplete
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2.exe
+C:\Users\afegi\OneDrive\Рабочий стол\Kursach3.0\Kursach3.0\obj\Debug\PharmacyKurs2.pdb
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\bin\Debug\PharmacyKurs2.exe.config
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\bin\Debug\PharmacyKurs2.exe
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\bin\Debug\PharmacyKurs2.pdb
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\bin\Debug\EntityFramework.dll
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\bin\Debug\EntityFramework.xml
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.AssemblyReference.cache
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.SuggestedBindingRedirects.cache
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.ResolveComReference.cache
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\AddWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\MainWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\RedactWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\ReportWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\App.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2_Content.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2_MarkupCompile.cache
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2_MarkupCompile.lref
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\AddWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\MainWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\RedactWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\ReportWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.g.resources
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs_2.Properties.Resources.resources
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.GenerateResource.cache
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.CoreCompileInputs.cache
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.CopyComplete
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.exe
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.pdb
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PrepWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\PharmacyKurs2\PharmacyKurs2\obj\Debug\PrepWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\bin\Debug\PharmacyKurs2.exe.config
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\bin\Debug\PharmacyKurs2.exe
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\bin\Debug\PharmacyKurs2.pdb
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\bin\Debug\EntityFramework.dll
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\bin\Debug\EntityFramework.xml
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.AssemblyReference.cache
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.SuggestedBindingRedirects.cache
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.ResolveComReference.cache
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\AddWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PrepWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\MainWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\RedactWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\ReportWindow.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\App.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2_Content.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2_MarkupCompile.cache
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2_MarkupCompile.lref
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\AddWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PrepWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\MainWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\RedactWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\ReportWindow.baml
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.g.resources
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs_2.Properties.Resources.resources
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.GenerateResource.cache
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.CoreCompileInputs.cache
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.csproj.CopyComplete
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.exe
+C:\Users\afegi\OneDrive\Рабочий стол\На завтра\PharmacyKurs2\PharmacyKurs2\obj\Debug\PharmacyKurs2.pdb

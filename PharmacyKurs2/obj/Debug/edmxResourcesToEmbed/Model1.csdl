@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Kursach2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BundleSupplies">
+    <Key>
+      <PropertyRef Name="ID_Bundle" />
+    </Key>
+    <Property Name="ID_Bundle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Supply" Type="Int32" />
+    <Property Name="ID_Supplier" Type="Int32" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK_BundleSupplies_Supplier" FromRole="BundleSupplies" ToRole="Supplier" />
+    <NavigationProperty Name="Supply" Relationship="Self.FK_BundleSupplies_Supply" FromRole="BundleSupplies" ToRole="Supply" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="ID_Group" />
+    </Key>
+    <Property Name="ID_Group" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameOfGroup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Preparation" Relationship="Self.FK_Preparation_Group" FromRole="Group" ToRole="Preparation" />
+  </EntityType>
+  <EntityType Name="LK">
+    <Key>
+      <PropertyRef Name="Auth_ID" />
+    </Key>
+    <Property Name="Auth_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Preparation">
+    <Key>
+      <PropertyRef Name="ID_Preparation" />
+    </Key>
+    <Property Name="ID_Preparation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Group" Type="Int32" />
+    <Property Name="ID_Supplier" Type="Int32" />
+    <Property Name="PreparationName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Cost" Type="Int32" />
+    <Property Name="Product_picture" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Group" Relationship="Self.FK_Preparation_Group" FromRole="Preparation" ToRole="Group" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK_Preparation_Supplier" FromRole="Preparation" ToRole="Supplier" />
+    <NavigationProperty Name="Supply" Relationship="Self.FK_Supply_Preparation" FromRole="Preparation" ToRole="Supply" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="ID_Supplier" />
+    </Key>
+    <Property Name="ID_Supplier" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_Supplier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BundleSupplies" Relationship="Self.FK_BundleSupplies_Supplier" FromRole="Supplier" ToRole="BundleSupplies" />
+    <NavigationProperty Name="Preparation" Relationship="Self.FK_Preparation_Supplier" FromRole="Supplier" ToRole="Preparation" />
+  </EntityType>
+  <EntityType Name="Supply">
+    <Key>
+      <PropertyRef Name="ID_Supply" />
+    </Key>
+    <Property Name="ID_Supply" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Preparation" Type="Int32" />
+    <Property Name="Quantity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BundleSupplies" Relationship="Self.FK_BundleSupplies_Supply" FromRole="Supply" ToRole="BundleSupplies" />
+    <NavigationProperty Name="Preparation" Relationship="Self.FK_Supply_Preparation" FromRole="Supply" ToRole="Preparation" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_BundleSupplies_Supplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="0..1" />
+    <End Role="BundleSupplies" Type="Self.BundleSupplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="ID_Supplier" />
+      </Principal>
+      <Dependent Role="BundleSupplies">
+        <PropertyRef Name="ID_Supplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BundleSupplies_Supply">
+    <End Role="Supply" Type="Self.Supply" Multiplicity="0..1" />
+    <End Role="BundleSupplies" Type="Self.BundleSupplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supply">
+        <PropertyRef Name="ID_Supply" />
+      </Principal>
+      <Dependent Role="BundleSupplies">
+        <PropertyRef Name="ID_Supply" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Preparation_Group">
+    <End Role="Group" Type="Self.Group" Multiplicity="0..1" />
+    <End Role="Preparation" Type="Self.Preparation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Group">
+        <PropertyRef Name="ID_Group" />
+      </Principal>
+      <Dependent Role="Preparation">
+        <PropertyRef Name="ID_Group" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Preparation_Supplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="0..1" />
+    <End Role="Preparation" Type="Self.Preparation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="ID_Supplier" />
+      </Principal>
+      <Dependent Role="Preparation">
+        <PropertyRef Name="ID_Supplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supply_Preparation">
+    <End Role="Preparation" Type="Self.Preparation" Multiplicity="0..1" />
+    <End Role="Supply" Type="Self.Supply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Preparation">
+        <PropertyRef Name="ID_Preparation" />
+      </Principal>
+      <Dependent Role="Supply">
+        <PropertyRef Name="ID_Preparation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BundleSupplies" EntityType="Self.BundleSupplies" />
+    <EntitySet Name="Group" EntityType="Self.Group" />
+    <EntitySet Name="LK" EntityType="Self.LK" />
+    <EntitySet Name="Preparation" EntityType="Self.Preparation" />
+    <EntitySet Name="Supplier" EntityType="Self.Supplier" />
+    <EntitySet Name="Supply" EntityType="Self.Supply" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_BundleSupplies_Supplier" Association="Self.FK_BundleSupplies_Supplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="BundleSupplies" EntitySet="BundleSupplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BundleSupplies_Supply" Association="Self.FK_BundleSupplies_Supply">
+      <End Role="Supply" EntitySet="Supply" />
+      <End Role="BundleSupplies" EntitySet="BundleSupplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Preparation_Group" Association="Self.FK_Preparation_Group">
+      <End Role="Group" EntitySet="Group" />
+      <End Role="Preparation" EntitySet="Preparation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Preparation_Supplier" Association="Self.FK_Preparation_Supplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="Preparation" EntitySet="Preparation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supply_Preparation" Association="Self.FK_Supply_Preparation">
+      <End Role="Preparation" EntitySet="Preparation" />
+      <End Role="Supply" EntitySet="Supply" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

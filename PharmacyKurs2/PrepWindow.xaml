@@ -1,0 +1,55 @@
+﻿<Window x:Class="PharmacyKurs_2.PrepWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PharmacyKurs_2"
+        mc:Ignorable="d"
+        Title="Окно препаратов" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.8*"/>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="UserNameLabel" Content="Имя пользователя" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Center" Width="151" Grid.Column="3" Grid.Row="1" FontSize="18"/>
+        <Label Content="Отслеживание фармацевтики" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Center" Width="443" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" FontSize="28"/>
+        <ListBox x:Name="listBox" SelectionMode="Single" HorizontalAlignment="Center" Height="350"  VerticalAlignment="Top" Width="599" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="3" SelectionChanged="listBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" >
+                        <Image Margin="20" Source="../../Resources/Logo-main.PNG" Width="100"></Image>
+                        <StackPanel Width="375" Orientation="Vertical">
+                            <TextBlock FontSize="14" FontWeight="Bold" Margin="0,20,0,0" TextWrapping="Wrap"><Run Text="Наименование"></Run> - <Run Text="{Binding PreparationName}"></Run></TextBlock>
+                            <TextBlock TextWrapping="Wrap">Группа Препаратов: <Run Text="{Binding Group.NameOfGroup}"></Run></TextBlock>
+                            <TextBlock TextWrapping="Wrap"><Run Text=""></Run></TextBlock>
+                        </StackPanel>
+                        <TextBlock Margin="0,20,0,0" Width="150" TextAlignment="Right">Стоимость: <Run Text="{Binding Cost}"></Run></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Content="Редактировать" Background="BlanchedAlmond" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3" Width="120" Height="40" FontSize="18" FontFamily="Times New Roman" Click="Button_Click" Margin="0,171,0,0"/>
+        <Button x:Name="AddButtonGoods" Background="BlanchedAlmond" Content="Добавить" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Width="120" Height="40" FontSize="18" FontFamily="Times New Roman" Click="AddButtonGoods_Click"/>
+        <Button x:Name="DeleteButton" Content="Удалить" Background="Red" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3" Width="120" Height="40" FontSize="18" FontFamily="Times New Roman" Click="DeleteButton_Click" IsEnabled="False" Margin="0,216,0,0"/>
+        <TextBox x:Name="SearchBox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="120" Grid.Row="1" TextChanged="SearchBox_TextChanged"/>
+        <Label Content="Поиск" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="PriceCheckBox" Content="Фильтрация по цене" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Bottom" Checked="PriceCheckBox_Checked"/>
+        <StackPanel Grid.Row="3" Grid.Column="0" Grid.RowSpan="2">
+            <Label Content="C" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Times New Roman"/>
+            <TextBox x:Name="PriceBox1" Grid.Column="1" Background="Beige" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22" Width="90" IsEnabled="{Binding ElementName=PriceCheckBox, Path=IsChecked}" TextChanged="PriceBox1_TextChanged"/>
+        <Label Content="По" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Times New Roman"/>
+            <TextBox  x:Name="PriceBox2" Grid.Column="3" Background="Beige" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22"  Width="90" IsEnabled="{Binding ElementName=PriceCheckBox, Path=IsChecked}" TextChanged="PriceBox2_TextChanged"/>
+        </StackPanel>
+        <Button x:Name="ReportButton" Background="BlanchedAlmond" Content="Отчёты" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Width="120" Height="40" FontSize="18" FontFamily="Times New Roman" Click="ReportButton_Click"/>
+    </Grid>
+</Window>

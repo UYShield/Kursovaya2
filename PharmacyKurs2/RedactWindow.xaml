@@ -1,0 +1,87 @@
+﻿<Window x:Class="PharmacyKurs_2.RedactWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PharmacyKurs_2"
+        mc:Ignorable="d"
+        Title="Редактирование" Height="330" Width="750" MinWidth="750" MinHeight="250" MaxHeight="750" MaxWidth="400">
+    <Window.Resources>
+        <local:CategoryConverter x:Key="CategoryConverter"></local:CategoryConverter>
+        <local:SupplierConverter x:Key="SupplierConverter"></local:SupplierConverter>
+    </Window.Resources>
+    <Grid Height="740" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="86*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Редактировать товар" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="26"/>
+        <Label Content="Наименование товара" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="24" Height="38" Margin="0,67,0,0" Grid.RowSpan="2" Width="232"/>
+        <TextBox x:Name="NameBox" Grid.Column="1" Grid.Row="1" Width="310" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" TextWrapping="Wrap" Text="{Binding PreparationName}" FontFamily="Times New Roman" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="GroupComboBox" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="310" Height="30" DisplayMemberPath="NameOfGroup" SelectedItem="{Binding Group}" FontFamily="Times New Roman" FontSize="16" RenderTransformOrigin="0.5,0.5" Margin="414,37,0,0">
+            <ComboBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+
+                    <TranslateTransform X="0.639" Y="0.005"/>
+                </TransformGroup>
+            </ComboBox.RenderTransform>
+        </ComboBox>
+        <ComboBox x:Name="SupplyComboBox" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Bottom" Width="310" Height="30" SelectedItem="{Binding Supplier}" DisplayMemberPath="Name_Supplier" FontFamily="Times New Roman" FontSize="16" RenderTransformOrigin="0.498,0.622" Margin="414,0,0,67" Grid.Column="1" Grid.RowSpan="2">
+            <ComboBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+
+                    <TranslateTransform X="-0.44" Y="-0.013"/>
+                </TransformGroup>
+            </ComboBox.RenderTransform>
+        </ComboBox>
+        <Label Content="Категория товара" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="24" RenderTransformOrigin="0.5,0.5" Margin="537,65,0,0" Grid.Column="1" Height="37" Width="186" Grid.RowSpan="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+
+                    <TranslateTransform X="1.151" Y="-0.938"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="RedButton" Background="BlanchedAlmond" Content="Редактировать" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="120" Height="40" FontFamily="Times New Roman" FontSize="18" Click="RedButton_Click" RenderTransformOrigin="0.5,0.5" Margin="316,26,0,0">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+
+                    <TranslateTransform X="-1.13" Y="0.621"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="PriceBox" Grid.Column="1" HorizontalAlignment="Left" Height="30" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Cost}" VerticalAlignment="Bottom" Width="310" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="2,0,0,67" Grid.RowSpan="2"/>
+        <Label Content="Цена" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="24" Margin="0,66,0,0" Grid.RowSpan="2" Height="38" Width="61"/>
+        <Label Content="Поставщик" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="24" RenderTransformOrigin="0.5,0.5" Margin="599,8,0,0" Height="37" Width="126" Grid.Column="1">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+
+                    <TranslateTransform X="0.132" Y="-1.406"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+    </Grid>
+</Window>

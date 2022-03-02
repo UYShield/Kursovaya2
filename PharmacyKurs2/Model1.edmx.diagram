@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="55d10fd1355c4fcfb8a71768897859c2" Name="Diagram1">
+        <EntityTypeShape EntityType="Kursach2Model.BundleSupplies" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Kursach2Model.Group" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Kursach2Model.LK" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Kursach2Model.Preparation" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Kursach2Model.Supplier" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Kursach2Model.Supply" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Kursach2Model.sysdiagrams" Width="1.5" PointX="2.75" PointY="6.375" IsExpanded="true" />
+        <AssociationConnector Association="Kursach2Model.FK_BundleSupplies_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Kursach2Model.FK_BundleSupplies_Supply" ManuallyRouted="false" />
+        <AssociationConnector Association="Kursach2Model.FK_Preparation_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="Kursach2Model.FK_Preparation_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Kursach2Model.FK_Supply_Preparation" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

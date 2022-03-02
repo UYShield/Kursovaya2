@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Kursach2Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BundleSupplies">
+    <Key>
+      <PropertyRef Name="ID_Bundle" />
+    </Key>
+    <Property Name="ID_Bundle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Supply" Type="int" />
+    <Property Name="ID_Supplier" Type="int" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="ID_Group" />
+    </Key>
+    <Property Name="ID_Group" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameOfGroup" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LK">
+    <Key>
+      <PropertyRef Name="Auth_ID" />
+    </Key>
+    <Property Name="Auth_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Preparation">
+    <Key>
+      <PropertyRef Name="ID_Preparation" />
+    </Key>
+    <Property Name="ID_Preparation" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Group" Type="int" />
+    <Property Name="ID_Supplier" Type="int" />
+    <Property Name="PreparationName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cost" Type="int" />
+    <Property Name="Product_picture" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="ID_Supplier" />
+    </Key>
+    <Property Name="ID_Supplier" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name_Supplier" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Supply">
+    <Key>
+      <PropertyRef Name="ID_Supply" />
+    </Key>
+    <Property Name="ID_Supply" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Preparation" Type="int" />
+    <Property Name="Quantity" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_BundleSupplies_Supplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="0..1" />
+    <End Role="BundleSupplies" Type="Self.BundleSupplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="ID_Supplier" />
+      </Principal>
+      <Dependent Role="BundleSupplies">
+        <PropertyRef Name="ID_Supplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BundleSupplies_Supply">
+    <End Role="Supply" Type="Self.Supply" Multiplicity="0..1" />
+    <End Role="BundleSupplies" Type="Self.BundleSupplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supply">
+        <PropertyRef Name="ID_Supply" />
+      </Principal>
+      <Dependent Role="BundleSupplies">
+        <PropertyRef Name="ID_Supply" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Preparation_Group">
+    <End Role="Group" Type="Self.Group" Multiplicity="0..1" />
+    <End Role="Preparation" Type="Self.Preparation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Group">
+        <PropertyRef Name="ID_Group" />
+      </Principal>
+      <Dependent Role="Preparation">
+        <PropertyRef Name="ID_Group" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Preparation_Supplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="0..1" />
+    <End Role="Preparation" Type="Self.Preparation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="ID_Supplier" />
+      </Principal>
+      <Dependent Role="Preparation">
+        <PropertyRef Name="ID_Supplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supply_Preparation">
+    <End Role="Preparation" Type="Self.Preparation" Multiplicity="0..1" />
+    <End Role="Supply" Type="Self.Supply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Preparation">
+        <PropertyRef Name="ID_Preparation" />
+      </Principal>
+      <Dependent Role="Supply">
+        <PropertyRef Name="ID_Preparation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище Kursach2ModelContainer">
+    <EntitySet Name="BundleSupplies" EntityType="Self.BundleSupplies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Group" EntityType="Self.Group" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LK" EntityType="Self.LK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Preparation" EntityType="Self.Preparation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supply" EntityType="Self.Supply" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BundleSupplies_Supplier" Association="Self.FK_BundleSupplies_Supplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="BundleSupplies" EntitySet="BundleSupplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BundleSupplies_Supply" Association="Self.FK_BundleSupplies_Supply">
+      <End Role="Supply" EntitySet="Supply" />
+      <End Role="BundleSupplies" EntitySet="BundleSupplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Preparation_Group" Association="Self.FK_Preparation_Group">
+      <End Role="Group" EntitySet="Group" />
+      <End Role="Preparation" EntitySet="Preparation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Preparation_Supplier" Association="Self.FK_Preparation_Supplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="Preparation" EntitySet="Preparation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supply_Preparation" Association="Self.FK_Supply_Preparation">
+      <End Role="Preparation" EntitySet="Preparation" />
+      <End Role="Supply" EntitySet="Supply" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

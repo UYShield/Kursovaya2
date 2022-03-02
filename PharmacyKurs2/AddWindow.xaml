@@ -1,0 +1,40 @@
+﻿<Window x:Class="PharmacyKurs_2.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PharmacyKurs_2"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="420" Width="750" MinWidth="750" MinHeight="300" MaxHeight="750" MaxWidth="400">
+    <Window.Resources>
+        <local:CategoryConverter x:Key="CategoryConverter"></local:CategoryConverter>
+        <local:SupplierConverter x:Key="SupplierConverter"></local:SupplierConverter>
+    </Window.Resources>
+    <Grid Height="734" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Добавление фармацевтики" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="384" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="26"/>
+        <Label Content="Название товара" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="24"/>
+        <TextBox x:Name="NameBox" Grid.Column="1" Grid.Row="1" Width="310" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" TextWrapping="Wrap" Text="" FontFamily="Times New Roman" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="GroupComboBox" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" Height="30" FontFamily="Times New Roman" FontSize="16" DisplayMemberPath="NameOfGroup" SelectedItem="{Binding Group}" Margin="395,0,30,6" />
+        <ComboBox x:Name="SupplyComboBox" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Height="30" FontFamily="Times New Roman" FontSize="16" DisplayMemberPath="Name_Supplier" SelectedItem="{Binding Supplier}" Margin="394,0,31,81" Grid.RowSpan="2" />
+        <Label Content="Группа товара" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="24" Margin="550,2,0,41"/>
+        <Button x:Name="AddButton" Background="BlanchedAlmond" Content="Добавить" Grid.Column="1" Grid.Row="3" FontFamily="Times New Roman" FontSize="18" Click="AddButton_Click" Margin="285,41,330,0"/>
+        <TextBox x:Name="PriceBox" Grid.Column="1" HorizontalAlignment="Left" Height="30" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="310" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="2,0,0,81" Grid.RowSpan="2"/>
+        <Label Content="Цена" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="24" Margin="4,3,0,0" Grid.ColumnSpan="2"/>
+        <Label Content="Поставщик" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Times New Roman" FontSize="24" Margin="578,10,0,0"/>
+    </Grid>
+</Window>
